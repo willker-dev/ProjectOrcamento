@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop de Orçamento Familiar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="jpg">
+</head>
+<body>
+    <div class="imagem">
+        <img src="img/logotopo.png" alt="">
+    </div>
+    <div id="budget-workshop">
+        <h1>Crie seu orçamento familiar aqui:</h1>
+        <div id="income-expenses">
+            <div id="income">
+                <h2>Renda Mensal</h2>
+                <input type="number" id="monthly-income" placeholder="Digite sua renda mensal">
+            </div>
+            <div id="expenses">
+                <h2>Despesas Mensais</h2>
+                <ul id="expense-list">
+                    <!-- Aqui serão adicionadas as despesas -->
+                </ul>
+                <button id="add-expense">Adicionar Despesa</button>
+            </div>
+        </div>
+        <div id="investment">
+            <h2>Simulação de Investimento</h2>
+            <label for="monthly-investment">Investimento Mensal (a partir de R$ 50):</label>
+            <input type="number" id="monthly-investment" placeholder="Digite o valor do investimento mensal">
+            
+            <!-- Novo campo de entrada para Investimento Anos -->
+            <label for="investment-years">Investimento em Anos:</label>
+            <input type="number" id="investment-years" placeholder="Quantidade de anos">
+
+            <button id="calculate-investment">Calcular</button>
+            <p id="investment-simulation"></p>
+        </div>
+        <div id="budget-results">
+            <h2>Resumo do Orçamento</h2>
+            <p>Renda Mensal: <span id="total-income">$0</span></p>
+            <p>Despesas Mensais: <span id="total-expenses">$0</span></p>
+            <p>Investimento Mensal: <span id="investment-summary">$0</span></p>
+            <p>Saldo Disponível: <span id="balance">$0</span></p>
+            <h2>Dicas de Investimento</h2>
+            <ul id="investment-tips">
+                <!-- Aqui serão adicionadas as dicas de investimento -->
+            </ul>
+        </div>
+        <button id="reset-button">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
